@@ -17,7 +17,7 @@ export const dataContacts = [
     icon: <FaTwitter />,
     colorFont: "white",
     colorBack: "black",
-    urlContact: "https://t.me/Willow_Token",
+    urlContact: "https://twitter.com/Willow_Token",
   },
   {
     icon: <FaDiscord />,
