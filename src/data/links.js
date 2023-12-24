@@ -11,7 +11,7 @@ export const dataLinks = [
   },
   {
     name: "Swap",
-    link: "https://raydium.io/swap",
+    link: "https://pancakeswap.finance/swap",
     flagLink: false,
   },
 ];
