@@ -8,20 +8,26 @@ import imgBone from "../../assets/images/icon/bone01.png";
 import imgHouse from "../../assets/images/icon/house01.png";
 import { FaPlus } from "react-icons/fa6";
 import { dataContacts } from "../../data/contacts";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleBuy = () => {
+    navigate("/firesale");
+  };
+
   return (
     <StyledComponent>
       <SectionInfomation>
         <TextWelcome>
           Welcome to Willow:{"\u00a0"}
           <TextWelcomeSmall>
-            A New Era of Playful Innovation on Binance Smart Chain
+            A New Era of Playful Innovation on Solana Chain
           </TextWelcomeSmall>
         </TextWelcome>
         <TextWelcomeDescription>
           Willow is a cryptocurrency that embrace the playful spirit of meme
-          culture and gamification on Binance Smart Chain. Willow is more than
+          culture and gamification on Solana Chain. Willow is more than
           just a cryptocurrency—it's an experience, a journey, and a celebration
           of the vibrant and creative community that forms its backbone.
           Inspired by the charm of meme doges and fueled by the efficiency of
@@ -32,7 +38,7 @@ const Home = () => {
           Contract Address:{" "}
           <span>
             <TextContractAddress
-              href={`https://bscscan.com/token/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`}
+              href={`https://solscan.io/account/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -42,7 +48,7 @@ const Home = () => {
         </TextWelcomeDescription>
         <SectionButtonGroup01>
           <SectionBuy>
-            <ButtonBuy>Buy $WILLO</ButtonBuy>
+            <ButtonBuy onClick={() => handleBuy()}>Buy $WILLO</ButtonBuy>
             <TextBuy>Buy Tax: 0%</TextBuy>
             <TextHolders>TOTAL $WILLO HOLDERS / 0</TextHolders>
           </SectionBuy>
@@ -76,7 +82,7 @@ const Home = () => {
               <ButtonViewExplorer
                 onClick={() => {
                   window.open(
-                    `https://bscscan.com/token/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`
+                    `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`
                   );
                 }}
               >
@@ -107,7 +113,7 @@ const Home = () => {
         <MobileButtonViewExplorer
           onClick={() => {
             window.open(
-              `https://bscscan.com/token/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`
+              `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_TOKEN_CONTRACT}`
             );
           }}
         >
