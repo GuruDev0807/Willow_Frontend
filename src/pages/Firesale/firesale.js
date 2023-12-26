@@ -75,7 +75,7 @@ const Firesale = () => {
           ></CustomProgress>
           <SectionTextProgress>
             <TextSale>Raised: {balance} SOL</TextSale>
-            <TextSale>Hardcap: 3,000 SOL</TextSale>
+            <TextSale>Hardcap: 1,000 SOL</TextSale>
           </SectionTextProgress>
         </SectionSaleProgress>
         <SectionDetail>
