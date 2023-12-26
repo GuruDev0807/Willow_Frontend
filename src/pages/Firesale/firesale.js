@@ -17,7 +17,7 @@ const Firesale = () => {
 
   const handleCopyAddress = () => {
     setFlagCopiedAddress(true);
-    copy(process.env.REACT_APP_ADDRESS_FIRESALE);
+    // copy(process.env.REACT_APP_ADDRESS_FIRESALE);
     setTimeout(() => {
       setFlagCopiedAddress(false);
     }, 1000);
@@ -80,7 +80,7 @@ const Firesale = () => {
         </SectionSaleProgress>
         <SectionDetail>
           <TextDeatil width={"100%"} textAlign={"center"}>
-            1 WILL = 0.000000001 SOL
+            1 WILL = 0.000000000000333 SOL
           </TextDeatil>
         </SectionDetail>
         <SectionDetail>
@@ -91,7 +91,8 @@ const Firesale = () => {
         <SectionDetail flexDirection={"column"}>
           <TextDeatil>Send SOL to :</TextDeatil>
           <TextDeatil>
-            <span>{process.env.REACT_APP_ADDRESS_FIRESALE}</span>
+            {/* <span>{process.env.REACT_APP_ADDRESS_FIRESALE}</span> */}
+            Sale address coming soon...
             <div style={{ display: "inline-block" }}>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <div />
@@ -115,9 +116,10 @@ const Firesale = () => {
       </SectionFairLaunch>
       <ButtonViewExplorer
         onClick={() => {
-          window.open(
-            `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_FIRESALE}`
-          );
+          // window.open(
+          //   `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_FIRESALE}`
+          // );
+          window.open(`https://solscan.io/account`);
         }}
       >
         Transaction History
