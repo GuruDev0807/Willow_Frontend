@@ -85,7 +85,7 @@ const Firesale = () => {
         </SectionDetail>
         <SectionDetail>
           <TextDeatil width={"100%"} textAlign={"center"}>
-            MIN: 0.1 SOL{"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0"}MAX: 200 SOL
+            MIN: 0.1 SOL{"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0"}MAX: 100 SOL
           </TextDeatil>
         </SectionDetail>
         <SectionDetail flexDirection={"column"}>
