@@ -116,10 +116,10 @@ const Firesale = () => {
       </SectionFairLaunch>
       <ButtonViewExplorer
         onClick={() => {
-          // window.open(
-          //   `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_FIRESALE}`
-          // );
-          window.open(`https://solscan.io/account`);
+          window.open(
+            `https://solscan.io/account/${process.env.REACT_APP_ADDRESS_FIRESALE}`
+          );
+          // window.open(`https://solscan.io/account`);
         }}
       >
         Transaction History
