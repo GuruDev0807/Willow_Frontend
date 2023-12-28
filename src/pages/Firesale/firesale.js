@@ -17,7 +17,7 @@ const Firesale = () => {
 
   const handleCopyAddress = () => {
     setFlagCopiedAddress(true);
-    // copy(process.env.REACT_APP_ADDRESS_FIRESALE);
+    copy(process.env.REACT_APP_ADDRESS_FIRESALE);
     setTimeout(() => {
       setFlagCopiedAddress(false);
     }, 1000);
@@ -75,12 +75,12 @@ const Firesale = () => {
           ></CustomProgress>
           <SectionTextProgress>
             <TextSale>Raised: {balance} SOL</TextSale>
-            <TextSale>Hardcap: 1,000 SOL</TextSale>
+            <TextSale>Softcap: 120 SOL</TextSale>
           </SectionTextProgress>
         </SectionSaleProgress>
         <SectionDetail>
           <TextDeatil width={"100%"} textAlign={"center"}>
-            1 WILL = 0.000000000000333 SOL
+            {/* 1 WILL = 0.000000000000333 SOL */}1 WILL = Coming soon ...
           </TextDeatil>
         </SectionDetail>
         <SectionDetail>
@@ -91,8 +91,8 @@ const Firesale = () => {
         <SectionDetail flexDirection={"column"}>
           <TextDeatil>Send SOL to :</TextDeatil>
           <TextDeatil>
-            {/* <span>{process.env.REACT_APP_ADDRESS_FIRESALE}</span> */}
-            Sale address coming soon...
+            <span>{process.env.REACT_APP_ADDRESS_FIRESALE}</span>
+            {/* Sale address coming soon... */}
             <div style={{ display: "inline-block" }}>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <div />
