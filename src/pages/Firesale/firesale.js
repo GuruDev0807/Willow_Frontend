@@ -63,8 +63,8 @@ const Firesale = () => {
         <TextTitle>Willow Firesale Is Live</TextTitle>
         <SectionCountdown>
           <Countdown
-            now={() => Date.now()}
-            date={new Date("2023-12-31").getTime()}
+            now={() => new Date()}
+            date={new Date("2023-12-31T13:30:00Z").getTime()}
             renderer={CountdownFairLaunch}
           />
         </SectionCountdown>
