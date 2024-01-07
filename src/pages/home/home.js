@@ -8,10 +8,10 @@ import imgBone from "../../assets/images/icon/bone01.png";
 import imgHouse from "../../assets/images/icon/house01.png";
 import { FaPlus } from "react-icons/fa6";
 import { dataContacts } from "../../data/contacts";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const handleBuy = () => {
     // navigate("/firesale");
     window.open(
@@ -53,6 +53,13 @@ const Home = () => {
           <SectionBuy>
             <ButtonBuy onClick={() => handleBuy()}>Buy $WILLO</ButtonBuy>
             <TextBuy>Buy Tax: 0%</TextBuy>
+            <TextEmail
+              onClick={() => {
+                window.open("mailto:team@willowdoge.xyz");
+              }}
+            >
+              team@willowdoge.xyz
+            </TextEmail>
             <TextHolders>TOTAL $WILLO HOLDERS / 0</TextHolders>
           </SectionBuy>
           <SectionSell>
@@ -64,6 +71,7 @@ const Home = () => {
               Whitepaper
             </ButtonWhitepaper>
             <TextBuy>Sell Tax: 0%</TextBuy>
+            <TextEmail></TextEmail>
             <TextHolders>TOTAL $WILLO BURNED / 0</TextHolders>
           </SectionSell>
         </SectionButtonGroup01>
@@ -496,7 +504,7 @@ const TextBuy = styled(Box)`
   font-weight: 400;
   line-height: normal;
   margin-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
   @media (max-width: 1440px) {
     margin-top: 50px;
@@ -773,6 +781,23 @@ const SectionContactIcon = styled(Box)`
   @media (max-width: 500px) {
     width: 40px;
     font-size: 18px;
+  }
+`;
+
+const TextEmail = styled(Box)`
+  color: #fff;
+
+  font-family: Bubblegum Sans;
+  font-size: 15.57px;
+  font-style: normal;
+  font-weight: 400;
+  height: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  transition: 0.3s;
+  &:hover{
+    text-shadow: 0px 0px 5px white;
   }
 `;
 
