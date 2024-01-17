@@ -55,7 +55,7 @@ const Home = () => {
             <TextBuy>Buy Tax: 0%</TextBuy>
             <TextEmail
               onClick={() => {
-                window.open("mailto:team@willowdoge.xyz");
+                window.open("mailto:Willowdoge19@gmail.com");
               }}
             >
               team@willowdoge.xyz
