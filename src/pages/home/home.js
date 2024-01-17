@@ -58,7 +58,7 @@ const Home = () => {
                 window.open("mailto:Willowdoge19@gmail.com");
               }}
             >
-              team@willowdoge.xyz
+              Willowdoge19@gmail.com
             </TextEmail>
             <TextHolders>TOTAL $WILLO HOLDERS / 0</TextHolders>
           </SectionBuy>
